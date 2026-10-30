@@ -2,7 +2,7 @@
 //
 // PENTING: setiap kali kamu mengubah file aplikasi (index.html, app.js, style.css),
 // naikkan nomor VERSI di bawah (misal v6 -> v7), supaya HP memuat file yang baru.
-const VERSI = 'kopi-mboyz-v7';
+const VERSI = 'kopi-mboyz-v8';
 
 // Daftar file yang disimpan untuk offline. Kalau menambah file baru, tulis di sini.
 const FILES = [

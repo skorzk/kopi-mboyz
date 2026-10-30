@@ -233,15 +233,14 @@ function reportText(k) {
   const d = S.days[k], t = calc(d), P = S.prof || {};
   const n = v => Math.round(v).toLocaleString('id-ID');
   return [
-    '*Nama* : ' + '*_' + (P.nama || '-') + '_*',
-    '*Shift* : ' + (P.shift || '-'),
-    '*Lokasi* : ' + (P.lokasi || '-'),
-    '*Terjual* : ' + t.sold,
-    '----------------------------------',
+    'Nama : ' + '_' + (P.nama || '-') + '_',
+    'Shift : ' + (P.shift || '-'),
+    'Lokasi : ' + (P.lokasi || '-'),
+    'Terjual : ' + t.sold,
     '*JUMLAH UANG SETORAN*',
-    '*Tunai* : ' + n(t.tunai),
-    '*QRIS* : ' + n(t.qris),
-    '*Jumlah* : ' + '*_' + n(t.exp) + '_*'
+    'Tunai : ' + n(t.tunai),
+    'QRIS : ' + n(t.qris),
+    'Jumlah : ' + '_' + n(t.exp) + '_'
   ].join('\n');
 }
 
